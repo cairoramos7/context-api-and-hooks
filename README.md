@@ -1,6 +1,7 @@
 # API Context with Hooks
 
-This application uses the concept of react hooks context recently added to versions of react.
+This application uses the concept of react hooks.
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
 
 ## Pre requirements
 
