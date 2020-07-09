@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import * as auth from '../services/auth';
 import api from '../services/api';
-import { AsyncStorage, View, ActivityIndicator } from 'react-native';
+import { AsyncStorage } from 'react-native';
 
 interface User {
     name: string;
@@ -31,9 +31,10 @@ export const AuthProvider: React.FC = ({ children }) => {
 
             if (storagedUser && storagedToken) {
                 api.defaults.headers.Authorization = `Bearer ${storagedToken}`;
-                setUser(JSON.parse(storagedUser));
-                setLoading(false);
+                setUser(JSON.parse(storagedUser));   
             }
+
+            setLoading(false);
         };
 
         loadStorageData();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button } from 'react-native';
+import { View, Button, Text } from 'react-native';
 
 import { useAuth } from '../../contexts/auth';
 
@@ -14,6 +14,9 @@ const SignIn: React.FC = () => {
 
     return (
         <View style={styles.container} >
+            <View style={styles.textContainer}>
+                <Text style={styles.defaultText}>Connect With Your Account</Text>
+            </View>
             <Button title="Sign In" onPress={handleSignIn} />
         </View>
     );
