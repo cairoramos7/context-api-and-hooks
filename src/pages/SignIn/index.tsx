@@ -1,9 +1,8 @@
 import React from 'react';
 import { View, Button, Text } from 'react-native';
 
-import { useAuth } from '../../contexts/auth';
-
 import styles from './styles';
+import { useAuth } from '@contexts/auth';
 
 const SignIn: React.FC = () => {
     const { signIn } = useAuth();

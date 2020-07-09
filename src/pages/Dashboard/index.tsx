@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Button, Text } from 'react-native';
 
 import styles from './styles';
-import { useAuth } from '../../contexts/auth';
+import { useAuth } from '@contexts/auth';
 
 const Dashboard: React.FC = () => {
     const { signOut, user } = useAuth();

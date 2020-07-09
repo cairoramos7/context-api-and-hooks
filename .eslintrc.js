@@ -11,6 +11,12 @@ module.exports = {
         react: {
             version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
         },
+        'import/resolver': {
+            node: {
+                paths: ['src'],
+            },
+            'babel-module': {},
+        },
     },
     extends: [
         'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
@@ -23,4 +29,5 @@ module.exports = {
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
         'react/prop-types': 'off',
     },
+    plugins: ['import'],
 };
