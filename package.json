@@ -37,8 +37,10 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-babel-module": "^5.1.2",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import-helpers": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
+    "install": "^0.13.0",
     "prettier": "^2.0.5",
     "typescript": "~3.9.5"
   },
