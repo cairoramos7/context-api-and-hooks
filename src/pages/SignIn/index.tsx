@@ -13,7 +13,7 @@ const SignIn: React.FC = () => {
     };
 
     return (
-        <View style={styles.container} >
+        <View style={styles.container}>
             <View style={styles.textContainer}>
                 <Text style={styles.defaultText}>Connect With Your Account</Text>
             </View>

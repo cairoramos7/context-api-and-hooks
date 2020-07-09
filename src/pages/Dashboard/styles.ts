@@ -12,5 +12,5 @@ export default StyleSheet.create({
     },
     defaultText: {
         fontSize: 25,
-    }
+    },
 });
